@@ -31,7 +31,7 @@ public class mainMenuController {
     @FXML
     public void initialize() {
         button1.setOnAction(event -> loadScene("/FXMLS/firstTask.fxml"));
-        button2.setOnAction(event -> loadScene("Scene2.fxml"));
+        button2.setOnAction(event -> loadScene("/FXMLS/secTask.fxml"));
         button3.setOnAction(event -> loadScene("Scene3.fxml"));
         button4.setOnAction(event -> loadScene("Scene4.fxml"));
         button5.setOnAction(event -> loadScene("Scene5.fxml"));
