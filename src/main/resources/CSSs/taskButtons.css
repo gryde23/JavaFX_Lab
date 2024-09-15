@@ -1,0 +1,10 @@
+.taskButton {
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: black;
+}
+.backButton {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
