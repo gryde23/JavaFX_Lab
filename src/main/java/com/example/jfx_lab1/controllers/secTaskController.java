@@ -121,7 +121,6 @@ public class secTaskController extends HelloController {
                 width += 5; // Увеличение ширины
                 break;
         }
-
         drawShape(gc); // Перерисовка фигуры
     }
 }

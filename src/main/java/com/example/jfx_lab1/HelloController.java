@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class HelloController {
-    private Stage stage;
+    protected Stage stage;
     private Scene scene;
     private Parent root;
 

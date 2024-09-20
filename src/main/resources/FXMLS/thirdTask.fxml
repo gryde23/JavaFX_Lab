@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfx_lab1.controllers.thirdTaskController">
+   <children>
+      <SplitPane dividerPositions="0.600877192982456" layoutX="4.0" layoutY="41.0" prefHeight="356.0" prefWidth="594.0">
+        <items>
+          <AnchorPane fx:id="paneForThirdTask" minHeight="0.0" minWidth="0.0" onMouseClicked="#onPaneClick" prefHeight="160.0" prefWidth="100.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="7.0" layoutY="8.0" prefHeight="173.0" prefWidth="62.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Примитивы">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <ToggleButton fx:id="lineButton" contentDisplay="CENTER" maxHeight="35.0" maxWidth="50.0" minHeight="35.0" minWidth="50.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0">
+                           <graphic>
+                              <Line endX="-77.9070816040039" endY="27.892892837524414" startX="-100.0" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="thirdTaskGroup" />
+                           </toggleGroup>
+                        </ToggleButton>
+                        <ToggleButton fx:id="circleButton" maxHeight="35.0" maxWidth="50.0" minHeight="35.0" minWidth="50.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" toggleGroup="$thirdTaskGroup">
+                           <graphic>
+                              <Circle fill="#1f93ff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </ToggleButton>
+                        <ToggleButton fx:id="ellipseButton" maxHeight="35.0" maxWidth="50.0" minHeight="35.0" minWidth="50.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" toggleGroup="$thirdTaskGroup">
+                           <graphic>
+                              <Ellipse fill="#1f93ff00" radiusX="18.0" radiusY="10.0" stroke="BLACK" strokeType="INSIDE" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </ToggleButton>
+                        <ToggleButton fx:id="rectangleButton" maxHeight="35.0" maxWidth="50.0" minHeight="35.0" minWidth="50.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" toggleGroup="$thirdTaskGroup">
+                           <graphic>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="24.0" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+                           </graphic>
+                        </ToggleButton>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="76.0" layoutY="8.0" prefHeight="99.0" prefWidth="143.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Цвет контура">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <ColorPicker fx:id="colorPickerForContour">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </ColorPicker>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Цвет заливки">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <ColorPicker fx:id="colorPickerForFill" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="76.0" layoutY="119.0" prefHeight="89.0" prefWidth="143.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Контур" />
+                        <HBox alignment="CENTER" prefHeight="34.0" prefWidth="143.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Толщина">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="textFieldForWidthOfContour" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="32.0" prefWidth="143.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Тип">
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <ChoiceBox fx:id="typeOfContour" maxWidth="120.0" prefHeight="26.0" prefWidth="88.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="14.0" layoutY="209.0" prefHeight="118.0" prefWidth="143.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Размер изображения pxl" />
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="143.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ширина">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="widthForImageToSave" prefHeight="26.0" prefWidth="76.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="36.0" prefWidth="143.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Высота">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="heightForImageToSave" prefHeight="26.0" prefWidth="76.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Button fx:id="backButton" layoutX="12.0" layoutY="6.0" mnemonicParsing="false" onAction="#initialize" prefHeight="24.0" prefWidth="20.0" text="&lt;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonForSave" layoutX="66.0" layoutY="8.0" mnemonicParsing="false" onAction="#onSaveButtonClick" text="Файл" />
+      <Button fx:id="buttonForHelp" layoutX="122.0" layoutY="8.0" mnemonicParsing="false" onMousePressed="#onHelpButtonPressed" onMouseReleased="#onHelpButtonReleased" text="Помощь" />
+   </children>
+</AnchorPane>
