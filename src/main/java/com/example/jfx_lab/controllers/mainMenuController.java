@@ -34,9 +34,9 @@ public class mainMenuController {
         button2.setOnAction(event -> loadScene("/FXMLS/secTask.fxml"));
         button3.setOnAction(event -> loadScene("/FXMLS/thirdTask.fxml"));
         button4.setOnAction(event -> loadScene("/FXMLS/fourthTask.fxml"));
-        button5.setOnAction(event -> loadScene("Scene5.fxml"));
+        button5.setOnAction(event -> loadScene("/FXMLS/fifthTask.fxml"));
         button6.setOnAction(event -> loadScene("Scene6.fxml"));
-        button7.setOnAction(event -> loadScene("Scene7.fxml"));
+        button7.setOnAction(event -> loadScene("/FXMLS/seventhTask.fxml"));
         button8.setOnAction(event -> loadScene("Scene8.fxml"));
     }
     private void loadScene(String fxmlFile) {

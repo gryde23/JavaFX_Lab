@@ -7,6 +7,7 @@ module com.example.jfx_lab {
     requires org.kordamp.bootstrapfx.core;
     requires javafx.swing;
     requires static lombok;
+    requires javafx.media;
 
     opens com.example.jfx_lab to javafx.fxml;
     opens com.example.jfx_lab.controllers.fourthTask to javafx.fxml;
