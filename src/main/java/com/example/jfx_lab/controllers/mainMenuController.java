@@ -1,4 +1,4 @@
-package com.example.jfx_lab1.controllers;
+package com.example.jfx_lab.controllers;
 
 
 import javafx.fxml.FXML;
@@ -33,7 +33,7 @@ public class mainMenuController {
         button1.setOnAction(event -> loadScene("/FXMLS/firstTask.fxml"));
         button2.setOnAction(event -> loadScene("/FXMLS/secTask.fxml"));
         button3.setOnAction(event -> loadScene("/FXMLS/thirdTask.fxml"));
-        button4.setOnAction(event -> loadScene("Scene4.fxml"));
+        button4.setOnAction(event -> loadScene("/FXMLS/fourthTask.fxml"));
         button5.setOnAction(event -> loadScene("Scene5.fxml"));
         button6.setOnAction(event -> loadScene("Scene6.fxml"));
         button7.setOnAction(event -> loadScene("Scene7.fxml"));

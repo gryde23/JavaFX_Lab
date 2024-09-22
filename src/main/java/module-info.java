@@ -1,4 +1,4 @@
-module com.example.jfx_lab1 {
+module com.example.jfx_lab {
     requires javafx.controls;
     requires javafx.fxml;
 
@@ -6,9 +6,12 @@ module com.example.jfx_lab1 {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
     requires javafx.swing;
+    requires static lombok;
 
-    opens com.example.jfx_lab1 to javafx.fxml;
-    opens com.example.jfx_lab1.controllers to javafx.fxml;
-    exports com.example.jfx_lab1;
-    exports com.example.jfx_lab1.controllers;
+    opens com.example.jfx_lab to javafx.fxml;
+    opens com.example.jfx_lab.controllers.fourthTask to javafx.fxml;
+    opens com.example.jfx_lab.controllers to javafx.fxml;
+    exports com.example.jfx_lab;
+    exports com.example.jfx_lab.controllers;
+    exports com.example.jfx_lab.controllers.fourthTask;
 }

@@ -1,12 +1,11 @@
-package com.example.jfx_lab1.controllers;
+package com.example.jfx_lab.controllers;
 
-import com.example.jfx_lab1.HelloController;
+import com.example.jfx_lab.HelloController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
-import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 
